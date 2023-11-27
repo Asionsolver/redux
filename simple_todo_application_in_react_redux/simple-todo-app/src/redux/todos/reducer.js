@@ -1,4 +1,5 @@
-import { initialState } from "./initialState";
+import initialState from "./initialStates.js";
+
 import {
   ADDED,
   ALLCOMPLETED,
@@ -59,7 +60,7 @@ const reducer = (state = initialState, action) => {
       });
 
     case CLEARCOMPLETED:
-    return state.filter(todo => !todo.completed)
+      return state.filter((todo) => !todo.completed);
 
     default:
       return state;
