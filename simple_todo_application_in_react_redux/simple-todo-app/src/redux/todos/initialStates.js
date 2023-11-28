@@ -15,7 +15,7 @@ const initialState = [
     id: 3,
     text: "Learn Javascript",
     completed: true,
-    color: "green",
+    
   },
   {
     id: 4,
