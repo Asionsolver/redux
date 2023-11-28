@@ -1,8 +1,9 @@
 import initialState from "./initialState";
 import { COLORCHANGED, STATUSCHANGED } from "./actionTypes";
 
+
 const reducer = (state = initialState, action) => {
-  switch (action) {
+  switch (action.type) {
     case STATUSCHANGED:
       return {
         ...state,
@@ -18,7 +19,7 @@ const reducer = (state = initialState, action) => {
             colors: [...state.colors, color],
           };
 
-        case "remove":
+        case "removed":
           return {
             ...state,
             colors: state.colors.filter(
