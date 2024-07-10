@@ -1,0 +1,15 @@
+{
+  "name": "advanced_todo_application_using_redux_thunk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "redux": "^5.0.1"
+  }
+}
