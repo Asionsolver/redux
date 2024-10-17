@@ -2,32 +2,34 @@ const counterEl = document.getElementById("counter");
 const incrementEl = document.getElementById("increment");
 const decrementEl = document.getElementById("decrement");
 
-// action identifiers
+// ! Step 06:action identifiers
+
 const INCREMENT = "increment";
 const DECREMENT = "decrement";
 
-// action creators
+// ! Step 07: action creators
 
 const increment = (value) => {
   return {
-    type: INCREMENT,
+    type: INCREMENT, // type is mandatory
     payload: value,
   };
 };
 const decrement = (value) => {
   return {
-    type: DECREMENT,
+    type: DECREMENT, // type is mandatory
     payload: value,
   };
 };
 
-// initial state
+// ! Step 01: initial state
 
 const initialState = {
   value: 0,
 };
 
-// create reducer function
+
+// ! Step 02: create reducer function
 
 function counterReducer(state = initialState, action) {
   if (action.type === INCREMENT) {
@@ -45,7 +47,7 @@ function counterReducer(state = initialState, action) {
   }
 }
 
-// create store
+// ! Step 03: create store
 
 const store = Redux.createStore(counterReducer);
 
@@ -53,13 +55,13 @@ const render = () => {
   const state = store.getState();
   counterEl.innerText = state.value.toString();
 };
-
+// ! Step 05: subscribe to store and UI manually update
 store.subscribe(render);
 
 // initially UI update
 render();
 
-// button click listeners
+// ! Step 04: button click listeners
 
 incrementEl.addEventListener("click", () => {
   store.dispatch(increment(5));
