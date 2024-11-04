@@ -1,5 +1,5 @@
 const { createStore, applyMiddleware } = require("redux");
-const { delayActionMiddleware, fetchTodosMiddleware } = require("./middlewares/middlewares");
+const { delayActionMiddleware, fetchTodosMiddleware } = require("./middlewares/middlewares_V02");
 // initial state
 const initialState = {
   todos: [],

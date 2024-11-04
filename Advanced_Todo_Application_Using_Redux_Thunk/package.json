@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "node-fetch": "^2.7.0",
-    "redux": "^5.0.1"
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0"
   }
 }
