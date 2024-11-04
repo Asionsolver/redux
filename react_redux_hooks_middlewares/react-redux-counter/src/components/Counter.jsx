@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 
 import { increment, decrement } from './../redux/counter/action';
+import Counter from './../../../../redux-toolkit/src/components/Counter';
 
 function Counter({count, increment, decrement}) {
     
@@ -40,3 +41,6 @@ const mapDispatchToProps=(dispatch)=>{
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+
+// arguments is Counter
+// parameters is mapStateToProps, mapDispatchToProps
