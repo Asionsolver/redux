@@ -1,0 +1,16 @@
+{
+  "name": "raw-redux-toolkit",
+  "version": "1.0.0",
+  "description": "learn redux tool kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.3.0",
+    "immer": "^10.1.1",
+    "redux": "^5.0.1"
+  }
+}
