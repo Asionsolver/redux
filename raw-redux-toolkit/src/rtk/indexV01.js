@@ -1,18 +1,18 @@
 const  store = require('./app/store.js');
 
-const {counterAction}= require('./features/counter/counterSlice');
-const {dynamicCounterAction} = require("./features/dynamicCounter/dynamicCounterSlice")
+const {counterAction}= require('./features/counter/counterSlice.js');
+const {dynamicCounterAction} = require("./features/dynamicCounter/dynamicCounterSlice.js")
 
 
 const {increment, decrement} = counterAction;
 const {dynamicIncrement, dynamicDecrement} = dynamicCounterAction;
 
 // initialState
-// console.log(`Initial State: ${JSON.stringify(store.getState())}`);
+console.log(`Initial State: ${JSON.stringify(store.getState())}`);
 
 // subscribe to store
 store.subscribe(() => {
-    // console.log(store.getState());
+    console.log(store.getState());
 });
 
 // counter dispatch actions
