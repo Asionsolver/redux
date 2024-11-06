@@ -16,13 +16,13 @@ store.subscribe(() => {
 });
 
 // counter dispatch actions
-// store.dispatch(increment());
+store.dispatch(increment());
 // store.dispatch(increment());
 // store.dispatch(decrement());
 // store.dispatch(increment());
 
 // dynamicCounter dispatch actions
-store.dispatch(dynamicIncrement(5));
-store.dispatch(dynamicIncrement(10));
-store.dispatch(dynamicDecrement(3));
-store.dispatch(dynamicIncrement(5));
+// store.dispatch(dynamicIncrement(5));
+// store.dispatch(dynamicIncrement(10));
+// store.dispatch(dynamicDecrement(3));
+// store.dispatch(dynamicIncrement(5));
